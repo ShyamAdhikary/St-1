@@ -80,8 +80,8 @@ image_p = image.copy()
 #image = open_cv_image.copy()
 
 #image_orig = image.copy() # Copy original image to display later
-(H, W) = image.shape[:2]
-st.write('Image H, W:', H, W, 'pixels')
+#(H, W) = image.shape[:2]
+#st.write('Image H, W:', H, W, 'pixels')
 #
 #d_width = 200
 #width = st.sidebar.slider('Select image width:', 100, 600, d_width)
