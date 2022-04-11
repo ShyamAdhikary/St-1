@@ -24,7 +24,7 @@ st.write ('Numpy      : {}'.format(np.__version__))
 st.title(" -- Streamlit testing -- ")
 
 #
-st.title(" -- Streamlit testing example for mobile -- ")
+st.title(" -- Streamlit testing example for mobile & sharing -- ")
 st.write ('Example ends here:', datetime.today().strftime("%x %H:%M:%S"))
 st.title(" -- Streamlit testing Ends -- ")
 # 
