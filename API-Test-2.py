@@ -6,6 +6,7 @@
 ###
 #
 #!pip install clarifai-grpc
+pip install pyttsx3
 
 # 
 # Uses Clarifai APIs for Object Detection in Python - Jupyter Notebook & .py scripts
