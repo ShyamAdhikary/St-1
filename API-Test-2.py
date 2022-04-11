@@ -15,8 +15,8 @@ import sys
 import numpy as np
 import pandas as pd
 #import cv2
-import matplotlib
-from matplotlib import pyplot as plt
+#import matplotlib
+#from matplotlib import pyplot as plt
 from datetime import datetime
 #
 import pyttsx3
@@ -33,8 +33,8 @@ st.sidebar.text('Testing starts-1:'+ datetime.today().strftime("%x %H:%M:%S"))
 st.sidebar.text(' *** Environment Details ***')
 st.sidebar.text('Python     : '+sys.version)
 st.sidebar.text('Numpy      : '+np.__version__)
-st.sidebar.text('Matplotlib : '+matplotlib.__version__)
-st.sidebar.text('OpenCV     : '+cv2.__version__)
+#st.sidebar.text('Matplotlib : '+matplotlib.__version__)
+#st.sidebar.text('OpenCV     : '+cv2.__version__)
 
 # Read image using OpenCV
 st.sidebar.write(' ** Using OpenCV ** ')
