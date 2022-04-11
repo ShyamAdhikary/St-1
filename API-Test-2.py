@@ -14,7 +14,7 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-import cv2
+#import cv2
 import matplotlib
 from matplotlib import pyplot as plt
 from datetime import datetime
