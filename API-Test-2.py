@@ -68,14 +68,15 @@ engineio.say(label)
 engineio.runAndWait()
 #
 # Read image using PIL, then convert it to OpenCV image format for all processing
-pil_image = Image.open(image_file).convert('RGB')  
-open_cv_image = np.array(pil_image) 
+#pil_image = Image.open(image_file).convert('RGB')  
+image = Image.open(image_file).convert('RGB')  
+#open_cv_image = np.array(pil_image) 
 # Convert RGB to BGR 
-open_cv_image = open_cv_image[:, :, ::-1].copy() 
+#open_cv_image = open_cv_image[:, :, ::-1].copy() 
 #
 
 #image = cv2.imread(image_file.name)
-image = open_cv_image.copy()
+#image = open_cv_image.copy()
 
 #image_orig = image.copy() # Copy original image to display later
 (H, W) = image.shape[:2]
@@ -130,7 +131,7 @@ for regions in response.outputs[0].data.regions:
     x2 = int(regions.region_info.bounding_box.right_col *W)
     y2 = int(regions.region_info.bounding_box.bottom_row *H)
     #print ("regions :\n", x1, y1, x2, y2)
-    cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),2)
+    #cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),2)
     #print ("regions :\n", regions.region_info.bounding_box.top_row)
     # 
     # Voice over the image dertails
@@ -140,8 +141,8 @@ for regions in response.outputs[0].data.regions:
     engineio.runAndWait()
 # 
 # Convert to Gray
-image_p = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-st.image(image_p, caption=image_file.name+' -- Processed', width=W)
+#image_p = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+#st.image(image_p, caption=image_file.name+' -- Processed', width=W)
 
 #
 st.write ('Example ends here:', datetime.today().strftime("%x %H:%M:%S"))
