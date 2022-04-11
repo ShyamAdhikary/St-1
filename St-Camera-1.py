@@ -21,7 +21,7 @@ from PIL import Image
 #st.write ('OpenCV     : {}'.format(cv2.__version__))
 
 # 
-st.title(" -- Streamlit testing -- ")
+st.title(" -- Streamlit testing Camera -- ")
 
 # Get the file from the user using file Uploader
 #image_file = st.file_uploader('Give input file:', type=['jpg'])
