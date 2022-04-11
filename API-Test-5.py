@@ -86,7 +86,7 @@ image_p = image.copy()
 #d_width = 200
 #width = st.sidebar.slider('Select image width:', 100, 600, d_width)
 #st.write('Image width:', width, 'pixels')
-st.image(image, caption=image_file.name+' -- Original', width=W, channels = 'BGR')
+#st.image(image, caption=image_file.name+' -- Original', width=W, channels = 'BGR')
 
 #
 #Set Clarifai API key
